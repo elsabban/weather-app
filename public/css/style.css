@@ -1,0 +1,30 @@
+h1 {
+    color:white;
+    background-color: grey;
+    box-shadow: 0px 0px 15px;
+    width:50%;
+    margin: 0 auto;
+    text-align: center
+}
+h1:hover {
+    background-color:red
+}
+body {
+    text-align: center
+}
+img {
+    height:15em;
+    width: 15em;
+    border:2px solid black;
+    text-align: center;
+    margin-top:5em;
+
+}
+* {
+    transition: all 0.5s linear
+}
+footer {
+    height:2em;
+    background: black;
+    color:wheat
+}
