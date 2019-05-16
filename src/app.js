@@ -13,7 +13,9 @@ const partialpath = path.join(__dirname,'../templates/partial')
 
 // initiate server using express
 const app = express()
- 
+const port = process.env.PORT || 3000 
+
+
 //setup static directory to serve
 app.use(express.static(pupblicPath))
 
@@ -91,6 +93,6 @@ app.get('*',(req,res) => {
 
 
 
-app.listen(3000, () => {
-    console.log('server is up and running')
+app.listen(port, () => {
+    console.log(`server is up and running on ${port}`)
 });
